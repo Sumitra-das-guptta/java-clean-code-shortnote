@@ -12,3 +12,5 @@ General rules of clean coding
 
 Characteristics of Clean Code 
 
+SOLID principles
+
