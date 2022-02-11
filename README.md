@@ -23,7 +23,7 @@ Writing clean code is vital because it allows one to communicate effectively wit
 1. For database requests, keep it as simple and productive as possible.
 1. Check naming conventions. Keep them clear and concise.
 1. Be consistent. Use the same names in similar functions (Get vs Fetch, Set vs Update, Add vs Append).
-1. Follow KISS principles of software development.
+1. Follow KISS(Keep It Simple, Stupid) principles of software development.
 1. Follow Boy scout rule. Leave the campground cleaner than you found it.
 1. Avoid using magic numbers that are assigned to a code with no clear meaning.
 1. Avoid deep nesting of loops. To make loop clear, we should use loops in separate functions. In this way, we can write nested loops as per requirements.
@@ -39,34 +39,33 @@ Follow a consistent pattern to organize our source files, tests, configurations,
     * src/main/resources: For resource files, like properties
     * src/test/java: For test source files
     * src/test/resources: For test resource files, like properties
-Similar to this, there are other popular project structures like Bazel suggested for Java, and we should choose one depending on our needs and audience.
-
 1. Naming Convention:
 Following naming conventions can go a long way in making our code readable and hence, maintainable.
     * Packages: Names should be in lowercase give meaningful name. 
-    For example:
-    ```java
-    package mycalculator
-    ```
+    
+       For example:
+       ```java
+       package mycalculator
+       ```
     * Classes: Names should be in CamelCase. Class in terms of object-oriented concepts is a blueprint for objects which often represent real-world objects. Hence it's meaningful to use nouns to name classes describing them sufficiently.
 
-    For example:
-    ```java
-    public class Account{
-        // --- some variables
-        //---some methods
-    }
-    ```
+       For example:
+       ```java
+       public class Account{
+           // --- some variables
+           //---some methods
+       }
+       ```
     * Interfaces: Names should be in CamelCase. They tend to have a name that describes an operation that a class can do.
    
-    For example:
-    ```java
-    // interface
-    interface Animal {
-    public void animalSound(); 
-    public void run(); 
-    }
-    ```
+       For example:
+       ```java
+       // interface
+       interface Animal {
+       public void animalSound(); 
+       public void run(); 
+       }
+       ```
 
     * Variables:
         - Use meaningful and pronounceable variable names.
@@ -186,7 +185,7 @@ Following naming conventions can go a long way in making our code readable and h
     * Methods: It's useful to name methods using verbs. 
     
         For example: getAddress() is a good example of method declaration instead of using address().
-        1. Methods should do one thing.
+        - Methods should do one thing.
            
             Bad practice:
             ```java
@@ -214,7 +213,7 @@ Following naming conventions can go a long way in making our code readable and h
                 return clientRecord.isActive();
             }
             ```
-        2. Method names should say what they do.
+        - Method names should say what they do.
             
             Bad practice:
             ```java
@@ -237,7 +236,7 @@ Following naming conventions can go a long way in making our code readable and h
             addMonthToDate(1, date);
             ```
 
-        3. Methods should only be one level of abstraction.
+        - Methods should only be one level of abstraction.
 
 1. Source File Structure: 
 A typical ordering of elements in a source file look:
@@ -291,6 +290,7 @@ A typical ordering of elements in a source file look:
        ```
 1. Code Comments: 
     * Only comment things that have business logic complexity.
+       
        Bad practice:
        ```java
        // Creating a List of customer names 
