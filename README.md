@@ -278,17 +278,17 @@ A typical ordering of elements in a source file look:
     Or else, replace with constants defined at the class level or in a separate class file
     * If possible, replace with values which can be picked from configuration or environment
 
-    Good practice:
-    ```java
-    private int storeClosureDay = 7;
+       Good practice:
+       ```java
+       private int storeClosureDay = 7;
 
-    // This can be refactored to use a constant from Java
-    ```
-    Bad practice:
-    ```java
+       // This can be refactored to use a constant from Java
+       ```
+       Bad practice:
+       ```java
 
-    private int storeClosureDay = DayOfWeek.SUNDAY.getValue()
-    ```
+       private int storeClosureDay = DayOfWeek.SUNDAY.getValue()
+       ```
 1. Code Comments: 
     * Only comment things that have business logic complexity.
     Good practice:
