@@ -1,12 +1,12 @@
-# Clean Code of JAVA Language
+# Clean Code Documentation for JAVA Language
 
 ## Definition
 
-Clean code is code that is easy to understand and easy to change. Clean code is a code that is easy to read, like a book where each word transforms into a picture and you can actually visualize everything like watching a movie, in short, should be readable by Humans.
+Clean code is code that is easy to understand and easy to change. Clean code is a code that is easy to read, like a book where each word transforms into a picture and anyone can actually visualize everything like watching a movie, in short, should be readable by Humans.
 
 ## Importance of Writing Clean Code
 
-Writing clean code is important because it allows you to clearly communicate with the next person who works with what you've written. Being able to return to previously written code and understand what it does is key, especially in the software development world. With clean codes, you are reducing the cost of maintenance, making it easy to fix bugs.
+Writing clean code is vital because it allows one to communicate effectively with the next person who will be working with it. Being able to return to previously written code and understand what it does is key, especially in the software development world.  Clean coding reduces the cost of maintenance, making it easy to fix bugs.
 
 ## Characteristics of Clean Code
 
@@ -17,21 +17,20 @@ Writing clean code is important because it allows you to clearly communicate wit
 ## General Principles of Clean Code
 
 1. Follow standard conventions.
-2. Always find root cause.
+1. Always find root cause.
 1. Follow SOLID principles.
-3. Split large functions into several functions
-4. For database requests, keep it as simple and productive as possible.
-5. Check naming conventions. Keep them clear and concise.
-5. Be consistent. Use the same names in similar functions (Get vs Fetch, Set vs Update, Add vs Append).
-6. If you copy-paste code multiple times, consider better ways to make your code more efficient.
-7. Follow the KISS principles of software development which stands for Keep It Simple, Stupid.
-8. Follow Boy scout rule. Leave the campground cleaner than you found it.
-10. Avoid using magic numbers. are assigned to a code with no clear meaning. They are for specific purposes, and here we do not set significant variables to the code. 
-11. Deep nesting: nesting of loops are complex to understand. To make your loop clear, you can use loops in separate functions. In this way, you can write nested loops as per your requirements.
-12. Comments should be good, but code needs to be self-explanatory.
-13. Avoid duplication in the code (DRY principle or Don’t Repeat Yourself ).
+1. Split large functions into several functions
+1. For database requests, keep it as simple and productive as possible.
+1. Check naming conventions. Keep them clear and concise.
+1. Be consistent. Use the same names in similar functions (Get vs Fetch, Set vs Update, Add vs Append).
+1. Follow KISS principles of software development.
+1. Follow Boy scout rule. Leave the campground cleaner than you found it.
+1. Avoid using magic numbers that are assigned to a code with no clear meaning.
+1. Avoid deep nesting of loops. To make loop clear, we should use loops in separate functions. In this way, we can write nested loops as per requirements.
+1. Comments should be good, but code needs to be self-explanatory.
+1. Avoid duplication in the code (DRY principle or Don’t Repeat Yourself ).
 
-## Clean Code Rules for JAVA Programming Language
+## Clean Code Rules for JAVA
 
 1. Project Structure: 
 Follow a consistent pattern to organize our source files, tests, configurations, data, and other code artifacts. Let's see some of the folders that Maven suggests we create:
@@ -44,11 +43,33 @@ Similar to this, there are other popular project structures like Bazel suggested
 
 1. Naming Convention:
 Following naming conventions can go a long way in making our code readable and hence, maintainable.
-    * Packages: Names should be in lowercase. With small projects that only have a few packages it's okay to just give them simple (but meaningful!) names.
-    * Classes: Names should be in CamelCase. Class in terms of object-oriented concepts is a blueprint for objects which often represent real-world objects. Hence it's meaningful to use nouns to name classes describing them sufficiently:
+    * Packages: Names should be in lowercase give meaningful name. 
+    For example:
+    ```java
+    package mycalculator
+    ```
+    * Classes: Names should be in CamelCase. Class in terms of object-oriented concepts is a blueprint for objects which often represent real-world objects. Hence it's meaningful to use nouns to name classes describing them sufficiently.
+
+    For example:
+    ```java
+    public class Account{
+        // --- some variables
+        //---some methods
+    }
+    ```
     * Interfaces: Names should be in CamelCase. They tend to have a name that describes an operation that a class can do.
+   
+    For example:
+    ```java
+    // interface
+    interface Animal {
+    public void animalSound(); 
+    public void run(); 
+    }
+    ```
+
     * Variables:
-        1. Use meaningful and pronounceable variable names.
+        - Use meaningful and pronounceable variable names.
             
             Bad practice:
             ```java
@@ -59,7 +80,7 @@ Following naming conventions can go a long way in making our code readable and h
             var days;
             ```
 
-        2. Use the same vocabulary for the same type of variable.
+        - Use the same vocabulary for the same type of variable.
             
             Bad practice:
             ```java
@@ -71,7 +92,7 @@ Following naming conventions can go a long way in making our code readable and h
             ```java
             getUser();
             ```
-        3. Use searchable names.
+        - Use searchable names.
 
             Bad practice:
             ```java
@@ -82,7 +103,7 @@ Following naming conventions can go a long way in making our code readable and h
             String currentDate = new SimpleDateFormat("YYYY/MM/DD").format(new Date());
             ```
 
-        4. Use explanatory variables.
+        - Use explanatory variables.
 
             Bad practice:
             ```java
@@ -102,7 +123,7 @@ Following naming conventions can go a long way in making our code readable and h
             saveCityZipCode(city, zipCode);
             ```
 
-        5. Avoid Mental Mapping
+        - Avoid Mental Mapping
         
             Bad practice:
                 
@@ -129,7 +150,8 @@ Following naming conventions can go a long way in making our code readable and h
                 dispatch(location);
             }
             ```
-        6. If your class/object name tells you something, don't repeat that in your variable name.
+        - Avoid repeatation what the class/object name says already.
+           
             Bad practice:
             ```java
                     class Car {
@@ -156,7 +178,14 @@ Following naming conventions can go a long way in making our code readable and h
             ```
 
     * Constants: Names should be in uppercase.
-    * Methods: It's useful to name methods using verbs. For example: getAddress() is a good example of method declaration instead of using address().
+
+        For example:
+        ```java
+        static final int DEFAULT_WIDTH static final int MAX_HEIGHT 
+        ```
+    * Methods: It's useful to name methods using verbs. 
+    
+        For example: getAddress() is a good example of method declaration instead of using address().
         1. Methods should do one thing.
            
             Bad practice:
@@ -186,6 +215,7 @@ Following naming conventions can go a long way in making our code readable and h
             }
             ```
         2. Method names should say what they do.
+            
             Bad practice:
             ```java
             private void addToDate(Date date, int month){
@@ -248,19 +278,20 @@ A typical ordering of elements in a source file look:
     Or else, replace with constants defined at the class level or in a separate class file
     * If possible, replace with values which can be picked from configuration or environment
 
-    Bad practice:
+    Good practice:
     ```java
     private int storeClosureDay = 7;
 
     // This can be refactored to use a constant from Java
     ```
-    Good practice:
+    Bad practice:
     ```java
+
     private int storeClosureDay = DayOfWeek.SUNDAY.getValue()
     ```
 1. Code Comments: 
     * Only comment things that have business logic complexity.
-    Bad practice:
+    Good practice:
     ```java
     // Creating a List of customer names 
     List<String> Names = Arrays.asList('Bob', 'Linda', 'Steve', 'Mary'); 
@@ -324,4 +355,3 @@ There are several tools available in the Java ecosystem, which take at least som
 * Static Analysis Tools: There are several static code analysis tools for Java, including SonarQube, Checkstyle, PMD and SpotBugs. They are great in detecting a lot of code smells like violations of naming conventions and resource leakage.
 # Conclusion
 Clean coding is a habit that needs to be developed by keeping these principles in mind and applying them whenever you write code. A famous writer Donald Knuth states that, " Programming is the art of telling another human what one wants the computer to do." We should practise clean coding to make coding environment more easier and enjoyable for everyone.
-
