@@ -291,16 +291,16 @@ A typical ordering of elements in a source file look:
        ```
 1. Code Comments: 
     * Only comment things that have business logic complexity.
-    Good practice:
-    ```java
-    // Creating a List of customer names 
-    List<String> Names = Arrays.asList('Bob', 'Linda', 'Steve', 'Mary'); 
+       Bad practice:
+       ```java
+       // Creating a List of customer names 
+       List<String> Names = Arrays.asList('Bob', 'Linda', 'Steve', 'Mary'); 
 
-    ```
-    Good practice:
-    ```java
-    List<String> customerNames = Arrays.asList('Bob', 'Linda', 'Steve', 'Mary'); 
-    ```
+       ```
+       Good practice:
+       ```java
+       List<String> customerNames = Arrays.asList('Bob', 'Linda', 'Steve', 'Mary'); 
+       ```
     * Don't Use a Comment When You Can Use a Function or a Variable.
         Bad practice:
         ```java
