@@ -248,20 +248,19 @@ A typical ordering of elements in a source file look:
     Or else, replace with constants defined at the class level or in a separate class file
     * If possible, replace with values which can be picked from configuration or environment
 
-    Good practice:
+    Bad practice:
     ```java
     private int storeClosureDay = 7;
 
     // This can be refactored to use a constant from Java
     ```
-    Bad practice:
+    Good practice:
     ```java
-
     private int storeClosureDay = DayOfWeek.SUNDAY.getValue()
     ```
 1. Code Comments: 
     * Only comment things that have business logic complexity.
-    Good practice:
+    Bad practice:
     ```java
     // Creating a List of customer names 
     List<String> Names = Arrays.asList('Bob', 'Linda', 'Steve', 'Mary'); 
