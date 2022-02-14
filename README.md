@@ -243,13 +243,13 @@ A typical ordering of elements in a source file look:
 
    * Package statement
    * Import statements
-   * All static imports
-   * All non-static imports
+      * All static imports
+      * All non-static imports
    * Exactly one top-level class
-   * Class variables
-   * Instance variables
-   * Constructors
-   * Methods
+      * Class variables
+      * Instance variables
+      * Constructors
+      * Methods
 
 1. Whitespaces: 
   
