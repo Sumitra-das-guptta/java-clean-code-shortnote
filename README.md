@@ -233,7 +233,7 @@ Following naming conventions can go a long way in making our code readable and h
             }
 
             Date date = new Date();
-            addMonthToDate(1, date);
+            addMonthToDate(date, 1);
             ```
 
         - Methods should only be one level of abstraction.
