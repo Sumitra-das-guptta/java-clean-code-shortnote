@@ -70,11 +70,12 @@ A typical ordering of elements in a source file look:
     - Closing brace “}” starts a line by itself indented to match its corresponding opening statement
 1. Statements:
     - Each line should contain at most one statement.
-    - if  statements always use braces {}.
+    - Always use braces {} in if statements.
     - Every switch  statement should include a default case.
     - Every time a case in switch statement falls through, add a comment where the break statement would normally be.
     - A try-catch statement may also be followed by finally.
 1. Annotation: 
+
 Using annotation is recommended in Java.
 ## Code Example:
 ```java
