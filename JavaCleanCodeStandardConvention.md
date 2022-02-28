@@ -43,7 +43,7 @@ A typical ordering of elements in a source file look:
 
 1. Naming Conventions:
     - Packages: Use all-lowercase ASCII letters.
-    - CLasses and Interfaces: Names should be nouns and  in mixed casewith the first letter of each internal word capi-talized. 
+    - Classes and Interfaces: Names should be nouns and  in mixed casewith the first letter of each internal word capi-talized. 
     - Methods: Use verbs as method names in camelCase.
     - Constants: Names should be in uppercase.
     - Variables: 
