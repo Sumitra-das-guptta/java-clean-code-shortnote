@@ -1,6 +1,6 @@
 ## Java Clean Code Convention
 1. Project Structure: 
-Follow a consistent pattern to organize source files, tests, configurations, data, and other code artifacts. Let's see some of the folders that Maven suggests:
+Follow a consistent pattern to organize source files, tests, configurations, data, and other code artifacts. Let's see some of the folders arrangement patterns:
 
     * src/main/java: For source files
     * src/main/resources: For resource files, like properties
@@ -34,7 +34,7 @@ A typical ordering of elements in a source file look:
     - Avoid positional markers.
     - Very short comments can appear on the same line 
     -  Block comments should be used at the beginning of each file and before each method.
-    - Doc comments describe Java  classes, interfaces, constructors, methods, and fields. This comment should appear just before the declaration.
+    - Doc comments should appear just before the declaration.
 1. WhiteSpace:
     -  Two blank lines before starting static blocks, fields, constructors and inner classes
     -  One blank line after a method signature that is multiline
@@ -54,9 +54,9 @@ A typical ordering of elements in a source file look:
     * Avoid three or more parameters where possible.
     * Consider refactoring the method if it needs more than recommended parameters.
     * Consider bundling parameters into custom-types.
-1. MISCELLANEOUS PRACTICES:
-    - PARENTHESES: Use parentheses liberally in expressions involving mixed operators to avoid operator precedence problems.
-    - RETURNING VALUES: avoid multiple return statements in a method when possible.
+1. Miscellaneous Practices:
+    - Use parentheses liberally in expressions involving mixed operators to avoid operator precedence problems.
+    - Avoid multiple return statements in a method when possible.
     - If an expression containing a binary operator appears before the ? in the ternary ?: operator, it should be parenthesized.
     - Use XXX in a comment to flag something that is bogus but works. 
     - Use FIXME to flag something that is bogus and broken.
@@ -74,7 +74,8 @@ A typical ordering of elements in a source file look:
     - Every switch  statement should include a default case.
     - Every time a case in switch statement falls through, add a comment where the break statement would normally be.
     - A try-catch statement may also be followed by finally.
-1. Annotation: Using annotation is recommended in Java.
+1. Annotation: 
+Using annotation is recommended in Java.
 ## Code Example:
 ```java
 /*
