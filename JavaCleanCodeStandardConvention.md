@@ -77,6 +77,8 @@ A typical ordering of elements in a source file look:
 1. Annotation: 
 
 Using annotation is recommended in Java.
+1. Hardcoding:
+   - Avoid hardcoding by replacing with constants or enums Or else, replace with constants defined at the class level or in a separate class file.
 ## Code Example:
 ```java
 /*
