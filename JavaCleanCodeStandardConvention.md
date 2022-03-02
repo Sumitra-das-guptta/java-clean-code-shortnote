@@ -1,4 +1,19 @@
 ## Java Clean Code Convention
+## Table of Contents
+
+1. [Project Structure](#1.Project Structure)
+2. [Source File Structure](#Source File Structure:)
+3. [Objects and Data Structures](#objects-and-data-structures)
+4. [Constructors](#constructors)
+5. [Braces](#braces)
+6. [Filename](#filename)
+7. [Hierarchy](#hierarchy)
+8. [Callbacks](#callbacks)
+9. [Imports](#imports)
+10. [Exports](#exports)
+11. [Comments](#comments)
+12. [Enums](#enums)
+13. [General guidelines](#general-guidelines)
 1. Project Structure: 
 Follow a consistent pattern to organize source files, tests, configurations, data, and other code artifacts. Let's see some of the folders arrangement patterns:
 
