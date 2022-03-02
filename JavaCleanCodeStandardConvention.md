@@ -1,8 +1,8 @@
 ## Java Clean Code Convention
 ## Table of Contents
 
-1. [Project Structure](#1.Project Structure)
-2. [Source File Structure](#Source File Structure:)
+1. [Project Structure:](#1.Project Structure)
+2. [Source File Structure:](#Source File Structure)
 3. [Objects and Data Structures](#objects-and-data-structures)
 4. [Constructors](#constructors)
 5. [Braces](#braces)
