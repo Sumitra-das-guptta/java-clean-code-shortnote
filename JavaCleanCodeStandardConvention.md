@@ -27,24 +27,24 @@ Follow a consistent pattern to organize source files, tests, configurations, dat
 ### 2. Source File Structure: 
 A typical ordering of elements in a source file look:
 
-   * Package statement
-   * Import statements
-      * All static imports
-      * All non-static imports
-   * Exactly one top-level class
-      * Class variables
-      * Instance variables
-      * Constructors
-      * Methods
+      * Package statement
+      * Import statements
+         * All static imports
+         * All non-static imports
+      * Exactly one top-level class
+         * Class variables
+         * Instance variables
+         * Constructors
+         * Methods
 ### 3. Indentation:
-    - Use Four spaces as unit of indentation.
-    - Tabs must be set exactly every 8 spaces (not 4).
-    - Avoid lines longer than 80 characters.
-    - If an expression doesn't fit on a single line, break it using the principle below.
-        - Break after a comma.
-        - Break before an operator.
-        - Prefer higher-level breaks to lower-level breaks.
-        - If the above rules result in code squished up against the right margin, simply indent 8 spaces.
+       - Use Four spaces as unit of indentation.
+       - Tabs must be set exactly every 8 spaces (not 4).
+       - Avoid lines longer than 80 characters.
+       - If an expression doesn't fit on a single line, break it using the principle below.
+           - Break after a comma.
+           - Break before an operator.
+           - Prefer higher-level breaks to lower-level breaks.
+           - If the above rules result in code squished up against the right margin, simply indent 8 spaces.
 ### 4. Comments:
     - Don't use a comment When you can use a function or a Variable.
     - No need for dead code, commented code, and journal comments. Use git log to get history.
