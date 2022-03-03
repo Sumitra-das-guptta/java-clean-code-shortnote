@@ -132,8 +132,7 @@ import com.omega.foobar.GammaInterface;
  * @since       EPSILON1.0
  */
 public abstract class DerivedClass extends ParentClass
-        implements AlphaInterface, BetaInterface, GammaInterface
-{
+        implements AlphaInterface, BetaInterface, GammaInterface {
     // class implementation comments go here...
 
     /**
@@ -141,8 +140,7 @@ public abstract class DerivedClass extends ParentClass
      *
      * @param   aName Description of parameter...
      */
-    public DerivedClass(const String aName)
-    {
+    public DerivedClass(const String aName) {
         super();
 
         String uppercaseName = null;
@@ -163,8 +161,7 @@ public abstract class DerivedClass extends ParentClass
      * @return  Description of return value...
      * @see     #setName
      */
-    public String getName()
-    {
+    public String getName() {
         // method implementation comments go here...
 
         return this.fName;
@@ -177,8 +174,7 @@ public abstract class DerivedClass extends ParentClass
      * @throws  PsiException Description of exception...
      * @see     #getName
      */
-    public void setName(const String newString) throws PsiException
-    {
+    public void setName(const String newString) throws PsiException {
         ...
     }
 
@@ -188,8 +184,7 @@ public abstract class DerivedClass extends ParentClass
      * @return  Description of return value...
      * @see     #setCount
      */
-    public static int getCount()
-    {
+    public static int getCount() {
         return DerivedClass.sCount;
     }
 
@@ -198,8 +193,7 @@ public abstract class DerivedClass extends ParentClass
      *
      * @param   args Description of parameters...
      */
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         // 'main' method is always last in 'public' interface section.
         ...
     }
@@ -211,8 +205,7 @@ public abstract class DerivedClass extends ParentClass
     /**
      * Method documentation comments go here...
      */
-    protected static void setCount(int newCount)
-    {
+    protected static void setCount(int newCount) {
         // FIXME need to ensure parameter is non-negative
 
         DerivedClass.sCount = newCount;
@@ -223,9 +216,9 @@ public abstract class DerivedClass extends ParentClass
      */
     protected abstract void doSomething();
 
-    //----------------------------------------------------------------------
+    //
     // private interface
-    //----------------------------------------------------------------------
+    //
 
     // constants
     //
@@ -242,29 +235,26 @@ public abstract class DerivedClass extends ParentClass
     /**
      * Method documentation comments go here...
      */
-    private void doSomethingElse()
-    {
+    private void doSomethingElse() {
         ...
     }
 
     /**
      * Class documentation comments go here...
      */
-    private class InnerClass
-    {
+    private class InnerClass {
         /**
          * Constructor documentation comments go here...
          */
-        public InnerClass()
-        {
+        public InnerClass() {
             ...
         }
 
         ...
 
-        //------------------------------------------------------------------
+        //
         // private interface
-        //------------------------------------------------------------------
+        //
 
         // instance variables
         //
